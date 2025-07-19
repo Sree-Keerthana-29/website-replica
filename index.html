@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nxt Talks Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Background Video Section -->
+     <img src="https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4d11fd25fa9_Frame%201000003044%20(2).svg" alt="NxtWave Logo" />
+      <p class="text-white text-center">By NxtWave</p>
+  
+  <div class="video-background">
+    <video class="bg-video active" autoplay muted loop playsinline>
+      <source src="videos/amazon-video.mp4" type="video/mp4" />
+    </video>
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="videos/uber-video.mp4" type="video/mp4" />
+    </video>
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="videos/mysys.mp4" type="video/mp4" />
+    </video>
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="videos/microsoft-video.mp4" type="video/mp4" />
+    </video>
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="videos/slice-video.mp4" type="video/mp4" />
+    </video>
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="videos/superk-video.mp4" type="video/mp4" />
+    </video>
+  
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center text-white text-center">
+    <div>
+      <h1 class="display-4">Talks by NxtWave</h1>
+      <p class="lead">Insights and stories from industry leaders</p>
+      <a href="#videos" class="btn btn-primary btn-lg mt-3">Watch Now</a>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="videos" class="container my-5">
+    <h2 class="text-center mb-4">Nxt Talks Videos</h2>
+    <div class="row gy-4 justify-content-center">
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/xN4i5Fet6OU" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/4DInGejLCTE" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Logos Marquee -->
+  <div class="company-marquee bg-light py-3">
+    <marquee behavior="scroll" direction="left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png" alt="Google" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" />
+    </marquee>
+  </div>
+
+  <!-- Speaker Cards -->
+  <section class="container my-5 text-center">
+    <h2 class="mb-4">Meet the Speakers</h2>
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="card speaker-card">
+          <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Speaker A" />
+          <div class="card-body">
+            <h5 class="card-title">Speaker A</h5>
+            <p class="card-text">Senior Engineer @ Microsoft</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card speaker-card">
+          <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Speaker B" />
+          <div class="card-body">
+            <h5 class="card-title">Speaker B</h5>
+            <p class="card-text">Product Lead @ Google</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card speaker-card">
+          <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Speaker C" />
+          <div class="card-body">
+            <h5 class="card-title">Speaker C</h5>
+            <p class="card-text">Data Scientist @ Netflix</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Access Form -->
+  <section class="bg-light py-5" id="form">
+    <div class="container">
+      <h2 class="text-center mb-4">Claim Your Free Access</h2>
+      <form id="accessForm">
+        <div class="mb-3"><input type="text" class="form-control" placeholder="Full Name" required></div>
+        <div class="mb-3"><input type="email" class="form-control" placeholder="Email" required></div>
+        <div class="mb-3"><input type="tel" class="form-control" placeholder="Phone Number" required></div>
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+      </form>
+      <div id="thanks" class="alert alert-success mt-3 text-center" style="display:none;">
+        Thank you! Your access request is submitted.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">&copy; 2025 Nxt Talks Clone</div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("accessForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("thanks").style.display = "block";
+    });
+  </script>
+</body>
+</html>  
